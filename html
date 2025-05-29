@@ -1,0 +1,28 @@
+<hr />
+<h2> سجل الأكل اليومي</h2>
+<form id="food-form">
+  <label>اسم الأكل: <input type="text" id="food-name" required /></label>
+  <label>السعرات: <input type="number" id="food-calories" required /></label>
+  <label>البروتين: <input type="number" id="food-protein" required /></label>
+  <label>الكارب: <input type="number" id="food-carbs" required /></label>
+  <label>الدهون: <input type="number" id="food-fat" required /></label>
+  <button type="submit">إضافة</button>
+</form>
+
+<div id="food-log">
+  <h3> الأكل اللي دخلته:</h3>
+  <ul id="food-list"></ul>
+  <p>الإجمالي - سعرات: <span id="total-calories">0</span>، بروتين: <span id="total-protein">0</span> جم، كارب: <span id="total-carbs">0</span> جم، دهون: <span id="total-fat">0</span> جم</p>
+</div>
+
+<hr />
+<h2> تتبع الوزن</h2>
+<form id="weight-form">
+  <label>الوزن اليوم (كجم): <input type="number" id="weight-input" required /></label>
+  <button type="submit">سجل الوزن</button>
+</form>
+
+<div id="weight-log">
+  <h3> الأوزان:</h3>
+  <ul id="weight-list"></ul>
+</div>
