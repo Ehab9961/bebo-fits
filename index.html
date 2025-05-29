@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bebo Fit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Fit</h1>
+    <p>احسب سعراتك الحرارية وماكروزك بسهولة</p>
+
+    <form id="calc-form">
+      <label>الوزن (كجم): <input type="number" id="weight" required /></label>
+      <label>الطول (سم): <input type="number" id="height" required /></label>
+      <label>العمر: <input type="number" id="age" required /></label>
+      <label>النشاط:
+        <select id="activity">
+          <option value="1.2">قليل</option>
+          <option value="1.375">خفيف</option>
+          <option value="1.55">متوسط</option>
+          <option value="1.725">عالي</option>
+        </select>
+      </label>
+      <label>الهدف:
+        <select id="goal">
+          <option value="maintain">ثبات</option>
+          <option value="bulk">زيادة</option>
+          <option value="cut">تنشيف</option>
+        </select>
+      </label>
+      <button type="submit">احسب</button>
+    </form>
+
+    <div id="results" style="display:none;">
+      <h2>النتائج:</h2>
+      <p>السعرات اليومية: <span id="calories"></span> كالوري</p>
+      <p>البروتين: <span id="protein"></span> جم</p>
+      <p>الكارب: <span id="carbs"></span> جم</p>
+      <p>الدهون: <span id="fat"></span> جم</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
